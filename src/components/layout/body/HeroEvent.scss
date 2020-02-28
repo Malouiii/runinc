@@ -1,0 +1,30 @@
+@import '../../../global/mixins';
+@import '../../../global/variables';
+
+.noMP{
+    @include noMP;
+}
+
+.eventHeroImg{
+    position: relative;
+}
+
+.eventHeroTxt{
+    position: absolute;
+    top: 27.5%;
+    color: $white;
+    background-color: black;
+    padding-left: 30%;
+    padding-right: 3%;
+    padding-top: .75%;
+    @include mQ(427px){
+        padding-left: 40%;
+    }
+    h2{
+        font-size: 1.25em;
+        @include mQ(427px){
+            font-size: 3em;
+        }
+    }
+
+}

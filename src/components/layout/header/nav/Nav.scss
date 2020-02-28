@@ -1,0 +1,38 @@
+@import '../../../../global/variables';
+//used variables: $linkactivecolor
+@import '../../../../global/mixins';
+
+nav{
+    @include mQ(427px){
+        margin-left: 10%;
+    }
+}
+
+.navbar_link{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    &:hover{
+        color: $yellow;
+        text-decoration: none;
+    }
+    @include mQ(427px){
+        font-size: 1.75em;
+    }
+}
+
+.navbar_link--active{
+    color: $linkActiveColor;
+}
+
+li{
+    display: inline-block;
+    margin: 1.75%;
+    text-align: center;
+    @include mQ(427px){
+        margin: 3%;
+        margin-top: 5%;
+        text-align: end;
+    }
+}
+

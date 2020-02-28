@@ -1,0 +1,23 @@
+@import '../../../global/variables';
+@import '../../../global/mixins';
+
+.inputContact{
+    background-color: $yellow;
+    border: 2px solid $black;
+    padding: 1%;
+    width: 95%;
+}
+
+.contactForm{
+    padding: 10% 5% 5% 10%;
+    @include mQ(427px){
+        padding: 20% 35% 10% 20%;
+    }
+}
+
+#beskedTxt{
+    font-size: 1.75em;
+    @include mQ(427px){
+        font-size: 2.5em;
+    }
+}

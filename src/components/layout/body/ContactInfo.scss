@@ -1,0 +1,40 @@
+@import '../../../global/variables';
+@import '../../../global/mixins';
+
+#map{
+    position: relative;
+}
+
+#mapTxt{
+    position: absolute;
+    top: 20%;
+    color: $black;
+    background-color: $yellow;
+    padding-left: 40%;
+    padding-right: 3%;
+    padding-top: .75%;
+    @include mQ(427px){
+        padding-left: 30%;
+        top: 40%;
+    }
+    h2{
+        font-size: 1.25em;
+        font-weight: bold;
+        @include mQ(427px){
+            font-size: 3em;
+        }
+    }
+}
+
+.bg-black{
+    background-color: black;
+    min-height: 250px;
+}
+
+#contactInfoHeadline{
+    font-weight: 300;
+    font-size: 1.75em;
+    @include mQ(427px){
+        font-size: 2em;
+    }
+}
